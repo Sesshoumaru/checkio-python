@@ -23,7 +23,7 @@ def checkio(data:list):
     # [data.remove(y) for y in ([x for x in data if data.count(x) == 1])]
 
     # 方法4 列表推导式
-    # data = [x for x in data if data.count(x) > 1]
+    data = [x for x in data if data.count(x) > 1]
     print(data)
 
     # replace this for solution
