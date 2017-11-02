@@ -1,5 +1,27 @@
 def checkio(str_number, radix):
-    return -1
+
+    def get_radixs(radix):
+        result = []
+        for i in range(0,radix):
+            if i < 10:
+                result.append(str(i))
+            else:
+                result.append(chr(65 + i - 10))
+        return result
+
+    radixs = get_radixs(radix)
+
+    result = 0
+    length = len(str_number)
+    for i in range(0,length):
+        if str_number[i] not in radixs:
+            return -1
+
+        print(pow(radix,length-i-1))
+        print(radixs.index(str_number[i]))
+        result = result + pow(radix,length-i-1)*radixs.index(str_number[i])
+
+    return result
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

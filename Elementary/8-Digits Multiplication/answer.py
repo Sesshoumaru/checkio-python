@@ -1,6 +1,7 @@
 def checkio(number):
 
-    return 1
+    #print("*".join(list(str(number).replace("0",""))))
+    return eval("*".join(list(str(number).replace("0",""))))
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

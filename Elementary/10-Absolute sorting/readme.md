@@ -4,13 +4,13 @@ The array (a tuple) has various numbers. You should sort it, but sort it by abso
 
 Precondition: The numbers in the array are unique by their absolute values.
 
-Input: An array of numbers , a tuple..
+**Input:** An array of numbers , a tuple..
 
-Output: The list or tuple (but not a generator) sorted by absolute values in ascending order.
+**Output:** The list or tuple (but not a generator) sorted by absolute values in ascending order.
 
-Addition: The results of your function will be shown as a list in the tests explanation panel.
+**Addition:** The results of your function will be shown as a list in the tests explanation panel.
 
-Example:
+**Example:**
 
 ```python
 
@@ -20,9 +20,9 @@ checkio((-1, -2, -3, 0)) == [0, -1, -2, -3]
 
 ```
 
-How it is used: Sorting is a part of many tasks, so it will be useful to know how to use it.
+**How it is used:** Sorting is a part of many tasks, so it will be useful to know how to use it.
 
-Precondition: len(set(abs(x) for x in array)) == len(array)
+**Precondition:** len(set(abs(x) for x in array)) == len(array)
 0 < len(array) < 100
 all(isinstance(x, int) for x in array)
 all(-100 < x < 100 for x in array)
