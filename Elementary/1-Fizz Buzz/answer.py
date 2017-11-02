@@ -1,19 +1,32 @@
-#Your optional code here
-#You can import some modules or create additional functions
+# Your optional code here
+# You can import some modules or create additional functions
 
 
 def checkio(number):
-    #Your code here
-    #It's main function. Don't remove this function
-    #It's using for auto-testing and must return a result for check.
+    # Your code here
+    # It's main function. Don't remove this function
+    # It's using for auto-testing and must return a result for check.
 
-    #replace this for solution
-    return str(number)
+    result = []
 
-#Some hints:
-#Convert a number in the string with str(n)
+    if number % 3 == 0:
+        result.append("Fizz")
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
+    if number % 5 ==0:
+        result.append("Buzz")
+
+    if len(result) == 0:
+        result.append(str(number))
+
+
+    # replace this for solution
+    return " ".join(result)
+
+
+# Some hints:
+# Convert a number in the string with str(n)
+
+# These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
     assert checkio(15) == "Fizz Buzz", "15 is divisible by 3 and 5"
     assert checkio(6) == "Fizz", "6 is divisible by 3"
